@@ -1,4 +1,4 @@
-console.log("Operaciones Aritméticas");
+/*console.log("Operaciones Aritméticas");
 
 const variableTexto = "Variable texto";
 
@@ -31,12 +31,24 @@ const unNumero = 10;
 const numeroDecimal = 20.5;
 
 console.log(unNumero);
-console.log(numeroDecimal);
+console.log(numeroDecimal);*/
 
 
 //OPERACIONES MATEMÁTICAS
 
-    let sumaNumeros = 0;
-    sumaNumeros = 2 + 2;
+let sumaNumeros = 0;
+sumaNumeros = 2 + 2;
 
-    console.log(sumaNumeros);
+console.log(sumaNumeros);
+
+sumaNumeros = 10 * 5 + 2;
+
+console.log(sumaNumeros);
+
+sumaNumeros = (2 + 10) * 5;
+
+console.log(sumaNumeros);
+
+const nombreMadre = "Celeste";
+
+console.log("El nombre de mi mamá es: " + nombreMadre);
