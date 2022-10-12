@@ -21,10 +21,18 @@ console.log(ciudadesDisponibles);
 
 const ciudadesMasVendidas = [];
 
-
-
 ciudadesMasVendidas.push("Sáo Paulo");
 ciudadesMasVendidas.push("Buenos Aires");
-ciudadesMasVendidas.push("Tigre");
+//ciudadesMasVendidas.push("Tigre");
 
 console.log(ciudadesMasVendidas);
+
+console.log(ciudadesDisponibles[2]);
+console.log(ciudadesMasVendidas[0]);
+
+const cantidadCiudades = ciudadesDisponibles.length;
+
+console.log(`Tenemos ${cantidadCiudades} ciudades disponibles`);
+
+ciudadesDisponibles.splice(1,1); //splice sirve para eliminar elementos, se añade desde dónde eliminar y cuántos elementos eliminar
+console.log(ciudadesDisponibles);
