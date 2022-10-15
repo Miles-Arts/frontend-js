@@ -34,7 +34,6 @@ puedeComprar = (edadComprador >= 18 || estaAcompanado);
     posicion++; //FORMA ABREVIADA
 }*/
 
-
 //LAZOS FOR
 
 for (posicion = 0; posicion < ciudadesDisponibles.length; posicion++) {
