@@ -18,7 +18,7 @@ let valorBoleto = 1000;
 const impuestoAeropuerto = 100;
 //let valorBoleta = "1800";
 //const tasaEmbarque = 60;
-const porcentajeTasaEmbarque = 60/100;
+const porcentajeTasaEmbarque = 60 / 100;
 var gestionAgencia = 100;
 
 console.log("Valor pasaje: " + valorBoleto);
@@ -37,8 +37,8 @@ console.log(boletoActivo);
 //let totalBoletos = valorBoleto + tasaEmbarque + gestionAgencia;
 //Orden precedencia
 //() PArentesis
-// * y /  Multipliación y División
+// - * y /  Multipliación y División
 // suma y resta 
-let totalBoletosFinal = (valorBoleto + impuestoAeropuerto) * (valorBoleto + porcentajeTasaEmbarque) + gestionAgencia; //Orden Precedencia operaciones matemáticas
+let totalBoletosFinal = (valorBoleto + impuestoAeropuerto) + (valorBoleto + impuestoAeropuerto) * porcentajeTasaEmbarque + gestionAgencia; //Orden Precedencia operaciones matemáticas
 //let totalBoleto = 1700 + 65 + 100;
-console.log("Precio total boletos: " + totalBoletosFinal);
+console.log("Precio total boletos: " , totalBoletosFinal);
