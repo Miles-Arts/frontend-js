@@ -14,6 +14,31 @@ console.log("Nombre nueva clienta: " + nombrePasajera + " - misma variable disti
 
 //Dato númerico
 
-const valorBoleto = 1300;
+let valorBoleto = 1000;
+const impuestoAeropuerto = 100;
+//let valorBoleta = "1800";
+//const tasaEmbarque = 60;
+const porcentajeTasaEmbarque = 60/100;
+var gestionAgencia = 100;
 
 console.log("Valor pasaje: " + valorBoleto);
+
+
+//Datos lógicos
+//TRUE o FALSE
+
+let boletoActivo = true;
+let boletoInactivo = false;
+console.log(boletoActivo);
+
+//Operaciones arítméticas
+
+//Suma
+//let totalBoletos = valorBoleto + tasaEmbarque + gestionAgencia;
+//Orden precedencia
+//() PArentesis
+// * y /  Multipliación y División
+// suma y resta 
+let totalBoletosFinal = (valorBoleto + impuestoAeropuerto) * (valorBoleto + porcentajeTasaEmbarque) + gestionAgencia; //Orden Precedencia operaciones matemáticas
+//let totalBoleto = 1700 + 65 + 100;
+console.log("Precio total boletos: " + totalBoletosFinal);
