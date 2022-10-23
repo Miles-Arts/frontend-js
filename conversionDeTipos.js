@@ -42,3 +42,16 @@ console.log(boletoActivo);
 let totalBoletosFinal = (valorBoleto + impuestoAeropuerto) + (valorBoleto + impuestoAeropuerto) * porcentajeTasaEmbarque + gestionAgencia; //Orden Precedencia operaciones matemáticas
 //let totalBoleto = 1700 + 65 + 100;
 console.log("Precio total boletos: " , totalBoletosFinal);
+
+//Cocatenación de Texto
+
+let nombrePasajero1 = "Catalina";
+let apellidoPasajero = "Riviera";
+
+
+let nombreCompleto = nombrePasajero1 + apellidoPasajero;
+let pasaporte = "3O" + "190"; 
+
+console.log(nombreCompleto);
+console.log("Pasaporte: " , pasaporte);
+console.log(nombrePasajero1 , " " , apellidoPasajero);
