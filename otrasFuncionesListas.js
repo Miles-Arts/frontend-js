@@ -1,6 +1,6 @@
 const ciudadesDisponibles = new Array("Bogotá", "Lima", "Santiago", "Montevideo", "Caracas");
 
-const paisesDisponibles = ["Colombia", "Perú", "Chile", "Brasil", "Argentina", "uruguay", "Venezuela"];
+const paisesDisponibles = ["Colombia", "Perú", "Chile", "Brasil", "Argentina", "Uruguay", "Venezuela"];
 
 const cantidadCiudades = ciudadesDisponibles.length;
 //const cantidadPaises = paisesDisponibles.length;
@@ -10,17 +10,17 @@ const cantidadCiudades = ciudadesDisponibles.length;
 
 
 //Remover el primer elemento
-ciudadesDisponibles.shift();
-console.log(ciudadesDisponibles);
+//ciudadesDisponibles.shift();
+//console.log(ciudadesDisponibles);
 
 
 //Remover el último elemento
-ciudadesDisponibles.pop();
-console.log(ciudadesDisponibles);
+//ciudadesDisponibles.pop();
+//console.log(ciudadesDisponibles);
 
 
-console.log(`En la Lista hay ${ciudadesDisponibles.length} ciudades disponibles.`);
-console.log(`En la Lista hay ${paisesDisponibles.length} países disponibles.`);
+//console.log(`En la Lista hay ${ciudadesDisponibles.length} ciudades disponibles.`);
+//console.log(`En la Lista hay ${paisesDisponibles.length} países disponibles.`);
 
 
 //Filtro de elementos dentro de una lista
@@ -29,9 +29,24 @@ console.log(`En la Lista hay ${paisesDisponibles.length} países disponibles.`);
 //console.log(paisesFiltrados);
 
 const paisesFiltrados = paisesDisponibles.filter((e) => e == "Bolivia");
-console.log(paisesFiltrados);
+//console.log(paisesFiltrados);
 
 
-//Crear una lista como cadena de caracteres 
+//Crear una lista como cadena de caracteres - Unificar Elementos
+//variable alfa númerica JOIN
+console.log(paisesDisponibles.join("-"));
 
-console.log(paisesDisponibles.join());
+//Order la lista ordel alfabeto
+console.log(paisesDisponibles.sort());
+//console.log(paisesDisponibles);
+
+
+//Posición elemento en la lista
+//console.log(`Perú está  en la posición:  ${paisesDisponibles.indexOf("Perú")}`);
+
+
+//Unificar dos listas
+const listasPaisesYCiudades = paisesDisponibles.concat(ciudadesDisponibles);
+//listasPaisesYCiudades.concat(ciudadesDisponibles);
+
+console.log(listasPaisesYCiudades);
