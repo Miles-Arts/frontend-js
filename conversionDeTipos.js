@@ -55,3 +55,6 @@ let pasaporte = "3O" + "190";
 console.log(nombreCompleto);
 console.log("Pasaporte: " , pasaporte);
 console.log(nombrePasajero1 , " " , apellidoPasajero);
+
+let noEsUnNumero = parseInt("AEIOU");
+console.log(noEsUnNumero);
