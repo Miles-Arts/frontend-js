@@ -42,8 +42,8 @@ if (contraseña == 1230) {
 // NOt = !  -no se cumple y cambia de valor
 //const edadPasajero = 23;
 //const estaAcompanado = false;
-let edadPasajero = 23;
-let estaAcompanado = false;
+let edadPasajero = 13;
+let estaAcompanado = true;
 
 console.log(`Verificando pasajes para ${ciudadDestino}`);
 
@@ -54,22 +54,19 @@ if (edadPasajero >= 18 || estaAcompanado) {
     } else {
         console.log("EL pasajero no cumple con los requisitos mínimos para viajar.");
     }
-} else {
+} /*else {
     //console.log("No cumple con los requitos")
-}
+}*/
 
 
 //APLICANDO LÓGICA NEGATIVA
 
-edadPasajero = 23;
+edadPasajero = 17;
 estaAcompanado = false;
 
-if (edadPasajero >= 18 || estaAcompanado) {
+if (!(ciudadesDisponibles.indexOf(ciudadDestino) >= 0) && (edadPasajero >= 18 || estaAcompanado)) {
 
-    if (!(ciudadesDisponibles.indexOf(ciudadDestino) >= 0) && (edadPasajero >= 18 || estaAcompanado)) {
-
-        console.log("EL pasajero no cumple con los requisitos mínimos para viajar.");
-    } else {
-        console.log("Pasajero cumple con los requisitos");
-    }
+    console.log("EL pasajero no cumple con los requisitos mínimos para viajar.");
+} else {
+    console.log("Pasajero cumple con los requisitos");
 }
