@@ -70,3 +70,4 @@ if (!(ciudadesDisponibles.indexOf(ciudadDestino) >= 0) && (edadPasajero >= 18 ||
 } else {
     console.log("Pasajero cumple con los requisitos");
 }
+
