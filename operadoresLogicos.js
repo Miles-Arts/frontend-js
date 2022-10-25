@@ -1,7 +1,7 @@
 //Operadores de comparación 
 
-const ciudadDestino = "Montevideo";
-const ciudadesDisponibles = new Array("Bogotá", "Lima", "Santiago", "Montevideo", "Caracas");
+const ciudadDestino = "Buenos Aires";
+const ciudadesDisponibles = new Array("Bogotá", "Lima", "Santiago", "Montevideo", "Caracas", "Buenos Aires");
 
 //Palabra reservada if if
 //Evalua una condición
@@ -39,12 +39,37 @@ if (contraseña == 1230) {
 
 //AND = &&  -Se deben cumplir las dos condiciones
 //OR = ||   -Se cumple una de las dos condiciones para ser aceptado
-// NOt = !
-const edadPasajero = 19;
+// NOt = !  -no se cumple y cambia de valor
+//const edadPasajero = 23;
+//const estaAcompanado = false;
+let edadPasajero = 23;
+let estaAcompanado = false;
 
 console.log(`Verificando pasajes para ${ciudadDestino}`);
-if ((ciudadesDisponibles.indexOf(ciudadDestino) >= 0) && edadPasajero >= 18) {
-    console.log("Pasajero cumple con los requisitos");
+
+if (edadPasajero >= 18 || estaAcompanado) {
+
+    if ((ciudadesDisponibles.indexOf(ciudadDestino) >= 0) && (edadPasajero >= 18 || estaAcompanado)) {
+        console.log("Pasajero cumple con los requisitos");
+    } else {
+        console.log("EL pasajero no cumple con los requisitos mínimos para viajar.");
+    }
 } else {
-    console.log("No hay pasajes");
+    //console.log("No cumple con los requitos")
+}
+
+
+//APLICANDO LÓGICA NEGATIVA
+
+edadPasajero = 23;
+estaAcompanado = false;
+
+if (edadPasajero >= 18 || estaAcompanado) {
+
+    if (!(ciudadesDisponibles.indexOf(ciudadDestino) >= 0) && (edadPasajero >= 18 || estaAcompanado)) {
+
+        console.log("EL pasajero no cumple con los requisitos mínimos para viajar.");
+    } else {
+        console.log("Pasajero cumple con los requisitos");
+    }
 }
