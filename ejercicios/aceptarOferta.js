@@ -1,5 +1,5 @@
 const mejorOferta = "D1";
-const empresaOferta = new Array("Claro", "Bavaria", "Rappi", "Davivienda", "Aviatur", "IBM", "Only" , "D1");
+const empresaOferta = new Array("Claro", "Bavaria", "Rappi", "Davivienda", "Aviatur", "IBM", "Only", "D1");
 
 let sueldoPromedio = 0;
 
