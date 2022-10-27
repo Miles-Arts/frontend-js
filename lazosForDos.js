@@ -1,6 +1,3 @@
-//const ciudadDestino = "Quito";
-//const ciudadesDisponibles = new Array("Bogotá", "Lima", "Santiago", "Montevideo", "Caracas", "Buenos Aires", "Santa Cruz");
-
 const datos = [
     {
         "ciudad": "Bogotá",
@@ -20,10 +17,9 @@ const datos = [
     },
 ];
 
-const presupuestoDisponible = 440;
+const presupuestoDisponible = 400;
 
-let i = 0;
-
+//let i = 0;
 //While  0 o más veces
 //Do while 1 o más veces
 /*while (i < datos.length  && datos[i].precio > presupuestoDisponible) {
@@ -32,19 +28,19 @@ let i = 0;
     console.log("No hay pasajes disponibles");
 else
     console.log("Puedes comprar pasaje para: " + datos[i].ciudad)*/
+
+//FOr desde una vlor inical para un valor final -- Repita PARA
 let ciudadSelecionada = "";
 
-do {
+for (let i = 0; i < datos.length  && ciudadSelecionada == ""; i++) {
     if (datos[i].precio <= presupuestoDisponible) {
         ciudadSelecionada = datos[i].ciudad;
-        break;
-    } i++;
-
-} while (i < datos.length && ciudadSelecionada == "")
+        /*break;*/
+    }
+}
 
 if (ciudadSelecionada == "")
     console.log("No hay pasajes disponibles");
 else
     console.log("Puedes comprar pasaje para: " + ciudadSelecionada);
 
-  

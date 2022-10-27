@@ -6,6 +6,7 @@
     "configurations": [
 
 
+        
         {
             "type": "node",
             "request": "launch",
@@ -24,7 +25,6 @@
             ],
             "program": "${workspaceFolder}\\condiciones.js"
         },
-
         {
             "type": "node",
             "request": "launch",
@@ -33,6 +33,33 @@
                 "<node_internals>/**"
             ],
             "program": "${workspaceFolder}\\lazoFor.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "lazosCiclosDos",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}\\lazosCiclosDos.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "compraCarro",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}\\compraCarro.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "lazosForDos",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}\\lazosForDos.js"
         }
     ]
 }
